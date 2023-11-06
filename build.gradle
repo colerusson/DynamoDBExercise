@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+
+    implementation group: 'software.amazon.awssdk', name: 'dynamodb-enhanced', version: '2.20.47'
+    implementation group: 'software.amazon.awssdk', name: 'dynamodb', version: '2.20.47'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
+}
+
+test {
+    useJUnitPlatform()
+}
