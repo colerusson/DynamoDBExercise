@@ -37,6 +37,14 @@ public class Follow {
         this.followee_name = followeeName;
     }
 
+    public String getFollower_name() {
+        return follower_name;
+    }
+
+    public String getFollowee_name() {
+        return followee_name;
+    }
+
     @Override
     public String toString() {
         return "Follow{" +
